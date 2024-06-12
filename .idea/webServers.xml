@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d1be3298-1654-4508-a2db-db376f63b3bc" name="smartShop" url="http://smartiShop">
+        <fileTransfer mountedRoot="C:\OSPanel\domains\smartiShop" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
