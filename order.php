@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once ("header.php");
-$page="order";
+$page="catalog";
 $smarty_order=new Smarty();
     if (isset($_SESSION['basket']) && count($_SESSION['basket']) > 0) {
         if (isset($_POST['btn'])) {

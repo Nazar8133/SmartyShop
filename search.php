@@ -1,6 +1,6 @@
 <?php
 require_once ("header.php");
-$page="search";
+$page="catalog";
 $smarty_search=new Smarty();
 $query="select tovar.id, metaTitle, price, kolvo, photo.fileName as photo from tovar left join photo on tovar.id=photo.idTovar";
 if(isset($_POST['searchPriceOt']) && !empty($_POST['searchPriceOt'])){

@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once ("header.php");
-$page="registr";
+$page="catalog";
 $smarty_registr=new Smarty();
 if (!isset($_POST['knopka'])){
     $fullContent=$smarty_registr->fetch("order2.tpl");
