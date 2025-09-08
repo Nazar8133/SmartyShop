@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once ("header.php");
-$page="details";
+$page="catalog";
 $smarty_details=new Smarty();
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $query = "select tovar.id, metaTitle, price, kolvo, photo.fileName as photo, har, data from tovar left join photo on tovar.id=photo.idTovar where tovar.id={$_GET['id']} and (photo.status=1 or photo.status is NULL)";

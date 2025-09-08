@@ -16,7 +16,7 @@
 <body class="sidebar-mini fixed">
 <div class="wrapper">
     <!-- Navbar-->
-    <header class="main-header hidden-print"><a class="logo" href="index.php">Vali</a>
+    <header class="main-header hidden-print"><a class="logo" href="index.php">Адмін-панель</a>
         <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
             <!-- Navbar Right Menu-->
@@ -36,18 +36,21 @@
                         </ul>
                     </li> -->
                     <!-- User Menu-->
+                    {if isset($userName)}
                     <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
                         <ul class="dropdown-menu settings-menu">
-                            <li><a href="settingUser.php"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                            <li><a href="exit.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                            <li><a href="settingUser.php"><i class="fa fa-cog fa-lg"></i> Налаштування</a></li>
+                            <li><a href="exit.php"><i class="fa fa-sign-out fa-lg"></i> Вихід</a></li>
                         </ul>
                     </li>
+                    {/if}
                 </ul>
             </div>
         </nav>
     </header>
     <!-- Side-Nav-->
     <aside class="main-sidebar hidden-print">
+        {if isset($userName)}
         <section class="sidebar">
             <div class="user-panel">
                 <div class="pull-left image"><img class="img-circle" src="imagesAvatar/{$userAvatar}"></div>
@@ -57,7 +60,7 @@
                 </div>
             </div>
             <!-- Sidebar Menu-->
-            {if isset($userName)}<ul class="sidebar-menu">
+            <ul class="sidebar-menu">
                 <li><a href="addBrend.php"><i class="fa fa-pie-chart"></i></i><span>Додати бренд</span></a></li>
                 <li><a href="addTovar.php"><i class="fa fa-pie-chart"></i><span>Додати товар</span></a></li>
                 <li><a href="adminOrder.php"><i class="fa fa-pie-chart"></i><span>Управління замовленнями</span></a></li>
@@ -68,9 +71,11 @@
                 {if $userRule==2}<li><a href="indexPage.php"><i class="fa fa-pie-chart"></i><span>Управління сторінками</span></a></li>{/if}
                 {if $userRule==2}<li><a href="registration.php"><i class="fa fa-pie-chart"></i><span>Реєстрація users</span></a></li>{/if}
                 {if !isset($userName)}<li><a href="login.php"><i class="fa fa-pie-chart"></i><span>Вхід в аккаунт</span></a></li>{/if}
-            </ul>{/if}
+            </ul>
         </section>
+        {/if}
     </aside>
+
     <div class="content-wrapper">
         <div class="page-title">
             <div>

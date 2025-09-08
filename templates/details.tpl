@@ -1,4 +1,4 @@
-<div id="gallery" class="span3">
+<div class="span3">
     <a>
         <img src="/images/{$tovar.photo}" style="width:100%"/>
     </a>

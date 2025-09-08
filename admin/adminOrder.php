@@ -5,14 +5,13 @@ if(isset($_SESSION['userId'], $_SESSION['userName'], $_SESSION['userAvatar'], $_
     $smarty_main->assign("title", "Управління замовленнями");
     $smarty_adminOrder = new Smarty();
     $query = "select metaTitle, price, idKlient, tovar.id as idTov, relationOrder.kolvo as kolvoOrder, koment, dataOrder, pib, number, email, adres from buyers inner join relationOrder on buyers.id=relationOrder.idKlient inner join tovar on relationOrder.idTovar=tovar.id where relationOrder.status=0 order by relationOrder.dataOrder DESC, relationOrder.idKlient ASC";
-    echo $query;
+    //echo $query;
     $rezult = mysqli_query($dbc, $query) or die("Error query!");
     $adminOrder = [];
     $number = 1;
     $chengKlient = 0;
     $chengData=0;
     $ollOrder = 0;
-    $rowsCount = 1;
     while ($row = mysqli_fetch_array($rezult)) {
         $idKlient = $row['idKlient'];
         $queryPhoto="select fileName from photo where idTovar='{$row['idTov']}' and status=1";

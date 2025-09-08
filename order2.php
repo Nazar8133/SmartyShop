@@ -11,7 +11,7 @@ if (isset($_SESSION['basket']) && count($_SESSION['basket'])>0){
         $number++;
         $vart=$item['price']*$item['kolvo'];
         $zahVart+=$vart;
-        $zakaz[]=array("number"=>$number, "photo"=>$item['photo'], "metaTitle"=>$item['metaTitle'], "price"=>$item['price'], "kolvo"=>$item['kolvo'], "vart"=>$vart);
+        $zakaz[]=array("photo"=>$item['photo'], "metaTitle"=>$item['metaTitle'], "price"=>$item['price'], "kolvo"=>$item['kolvo'], "vart"=>$vart);
     }
     $smarty_order2->assign("zakaz", $zakaz);
     $smarty_order2->assign("zahVart", $zahVart);

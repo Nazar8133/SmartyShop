@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-06-11 20:03:24
+/* Smarty version 4.3.1, created on 2025-09-08 15:51:06
   from 'D:\OSPanel\domains\smartiShop\templates\catalog.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6668835ce73d00_91730606',
+  'unifunc' => 'content_68bed13a905b38_96465278',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cebac14c5f6a30c9c0221f00770c4ab566e905b4' => 
     array (
       0 => 'D:\\OSPanel\\domains\\smartiShop\\templates\\catalog.tpl',
-      1 => 1718125401,
+      1 => 1757335863,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6668835ce73d00_91730606 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68bed13a905b38_96465278 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="sort-wrapper">
     <span class="sort-text">Сортувати за:</span>
     <div class="sort-buttons">

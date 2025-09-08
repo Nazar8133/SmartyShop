@@ -18,7 +18,7 @@
         <td>{$tovar[i].metaTitle}</td>
         <td>
             <div class="input-append">
-                <input class="span1 quantity-input" placeholder="1" id="appendedInputButtons" size="16" type="text" name="kolvo{$tovar[i].id}" min="1" max="{$tovar[i].skladKilk}" value="{$tovar[i].kolvo}">
+                <input class="span1 quantity-input" placeholder="1" id="appendedInputButtons" size="16" type="number" name="kolvo{$tovar[i].id}" min="1" max="{$tovar[i].skladKilk}" value="{$tovar[i].kolvo}">
                 <a href="/basket.php?id={$tovar[i].id}&mode=del&script=order" class="btn btn-danger" type="button"><i class="icon-remove icon-white"></i></a>
             </div>
         </td>

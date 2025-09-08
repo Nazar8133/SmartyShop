@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-06-11 22:51:47
+/* Smarty version 4.3.1, created on 2025-09-08 19:42:58
   from 'D:\OSPanel\domains\smartiShop\templates\details.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6668aad3621c98_69034655',
+  'unifunc' => 'content_68bf079221ccd0_89692385',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ed9192b3da34a32d5021a0995544d9266b61dced' => 
     array (
       0 => 'D:\\OSPanel\\domains\\smartiShop\\templates\\details.tpl',
-      1 => 1718135506,
+      1 => 1757349777,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6668aad3621c98_69034655 (Smarty_Internal_Template $_smarty_tpl) {
-?><div id="gallery" class="span3">
+function content_68bf079221ccd0_89692385 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="span3">
     <a>
         <img src="/images/<?php echo $_smarty_tpl->tpl_vars['tovar']->value['photo'];?>
 " style="width:100%"/>

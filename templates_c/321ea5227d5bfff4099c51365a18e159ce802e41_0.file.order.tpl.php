@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-06-11 15:03:18
+/* Smarty version 4.3.1, created on 2024-09-01 16:03:15
   from 'D:\OSPanel\domains\smartiShop\templates\order.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66683d065bed81_14428304',
+  'unifunc' => 'content_66d466137913f0_21318436',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '321ea5227d5bfff4099c51365a18e159ce802e41' => 
     array (
       0 => 'D:\\OSPanel\\domains\\smartiShop\\templates\\order.tpl',
-      1 => 1718054626,
+      1 => 1725195792,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66683d065bed81_14428304 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66d466137913f0_21318436 (Smarty_Internal_Template $_smarty_tpl) {
 ?><form action="order.php" method="post">
 <h3>Кошик товарів</h3>
 
@@ -49,7 +49,7 @@ for ($__section_i_0_iteration = 1, $_smarty_tpl->tpl_vars['__smarty_section_i']-
 </td>
         <td>
             <div class="input-append">
-                <input class="span1 quantity-input" placeholder="1" id="appendedInputButtons" size="16" type="text" name="kolvo<?php echo $_smarty_tpl->tpl_vars['tovar']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['id'];?>
+                <input class="span1 quantity-input" placeholder="1" id="appendedInputButtons" size="16" type="number" name="kolvo<?php echo $_smarty_tpl->tpl_vars['tovar']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['id'];?>
 " min="1" max="<?php echo $_smarty_tpl->tpl_vars['tovar']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['skladKilk'];?>
 " value="<?php echo $_smarty_tpl->tpl_vars['tovar']->value[(isset($_smarty_tpl->tpl_vars['__smarty_section_i']->value['index']) ? $_smarty_tpl->tpl_vars['__smarty_section_i']->value['index'] : null)]['kolvo'];?>
 ">

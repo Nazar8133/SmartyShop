@@ -5,8 +5,10 @@ if(isset($_SESSION['userId'], $_SESSION['userName'], $_SESSION['userRule'], $_SE
     $smarty_main->assign("title", "Реєстрація");
     if (!isset($_POST['knopka'])) {
         $smarty_registration = new Smarty();
-        $smarty_registration->assign("name", $_GET['name']);
-        $smarty_registration->assign("number", $_GET['number']);
+        if (isset($_GET['name'], $_GET['number'])) {
+            $smarty_registration->assign("name", $_GET['name']);
+            $smarty_registration->assign("number", $_GET['number']);
+        }
         $content = $smarty_registration->fetch("registration.tpl");
     } elseif (isset($_POST['name'], $_POST['email'], $_POST['password1'], $_POST['password2'], $_POST['number']) && $_POST['password1'] == $_POST['password2'] && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['number']) && !empty($_POST['password1']) && !empty($_POST['password2'])) {
         $query1 = "select id from user where email='{$_POST['email']}'";

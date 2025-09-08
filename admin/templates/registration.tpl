@@ -1,6 +1,6 @@
 <form action="registration.php" method="post" enctype="multipart/form-data">
     <label>Добавте імя користувача</label><br>
-    <input type="text" name="name" value="{$name}"><br>
+    <input type="text" name="name" {if isset($name)} value="{$name}" {/if}><br>
     <label>Добавити роль</label><br>
     <select name="rule">
         <option value="1" selected>Оператор</option>
@@ -15,6 +15,6 @@
     <label>Повіторіть пароль</label><br>
     <input type="password" name="password2"><br>
     <label>Добавте номер</label><br>
-    <input type="number" name="number" value="{$number}"><br>
+    <input type="number" name="number" {if isset($number)} value="{$number}" {/if}><br>
     <input type="submit" name="knopka" value="Зареэструвати"><br>
 </form>

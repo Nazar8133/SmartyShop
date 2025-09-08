@@ -27,7 +27,7 @@ if (isset($_SESSION['userName'], $_SESSION['userRule'], $_SESSION['userId'], $_S
     }
     $vartist=$row['price']*$row['orderKolvo'];
     $ollOrder+=$vartist;
-    $orderArchiv[]=array("idKlient"=>$row['idKlient'], "number"=>$number, "pib"=>$row['pib'], "nomer"=>$row['number'], "email"=>$row['email'], "metaTitle"=>$row['metaTitle'], "price"=>$row['price'], "orderKolvo"=>$row['orderKolvo'], "dataOrder"=>$row['dataOrder'], "koment"=>$row['koment'], "vartist"=>$vartist, "ollOrder"=>$ollOrder, "klientRows"=>$klientRows, "rowsCount"=>$rowsCount, "photo"=>$photo, "chengData"=>$chengData, "chengKlient"=>$chengKlient);
+    $orderArchiv[]=array("idKlient"=>$row['idKlient'], "number"=>$number, "pib"=>$row['pib'], "nomer"=>$row['number'], "email"=>$row['email'], "adres"=>$row['adres'], "metaTitle"=>$row['metaTitle'], "price"=>$row['price'], "orderKolvo"=>$row['orderKolvo'], "dataOrder"=>$row['dataOrder'], "koment"=>$row['koment'], "vartist"=>$vartist, "ollOrder"=>$ollOrder, "klientRows"=>$klientRows, "rowsCount"=>$rowsCount, "photo"=>$photo, "chengData"=>$chengData, "chengKlient"=>$chengKlient);
     if ($row['idKlient']!=$chengKlient || $row['dataOrder']!=$chengData){
     $chengKlient=$row['idKlient'];
     $chengData=$row['dataOrder'];

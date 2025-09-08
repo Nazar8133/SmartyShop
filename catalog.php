@@ -27,6 +27,9 @@ if (isset($_GET['sort'])){
     $queryTovar.=" order by price $sort";
     $smarty_catalog->assign("sort", $sort);
 }
+else{
+    $smarty_catalog->assign("sort", "asc");
+}
 if(isset($_GET['sort2'])){
     $sort2=$_GET['sort2'];
     switch ($sort2){
@@ -43,6 +46,9 @@ if(isset($_GET['sort2'])){
     $queryTovar.=" order by metaTitle $sort2";
     $smarty_catalog->assign("sort2", $sort2);
 }
+else{
+    $smarty_catalog->assign("sort2", "asc");
+}
 if(isset($sort) && !empty($sort) && $sort=="asc"){
     $sort1="desc";
     $smarty_catalog->assign("sort1", $sort1);
@@ -51,7 +57,6 @@ elseif (isset($sort) && !empty($sort) && $sort=="desc"){
     $sort1="asc";
     $smarty_catalog->assign("sort1", $sort1);
 }
-$smarty_catalog->assign("sort1", $sort1);
 if(isset($sort2) && !empty($sort2) && $sort2=="asc"){
     $sort12="desc";
     $smarty_catalog->assign("sort12", $sort12);
@@ -113,7 +118,6 @@ else{
     $smarty_catalog->assign("rez", 2);
 }
 $smarty_catalog->assign("tovar", $tovar);
-
 
 
 $fullContent=$smarty_catalog->fetch("catalog.tpl");

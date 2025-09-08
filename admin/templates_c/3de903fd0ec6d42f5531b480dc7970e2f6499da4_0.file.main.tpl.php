@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-06-12 18:10:32
+/* Smarty version 4.3.1, created on 2025-09-08 21:44:50
   from 'D:\OSPanel\domains\smartiShop\admin\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6669ba68475ce2_16096774',
+  'unifunc' => 'content_68bf242215c979_12157716',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3de903fd0ec6d42f5531b480dc7970e2f6499da4' => 
     array (
       0 => 'D:\\OSPanel\\domains\\smartiShop\\admin\\templates\\main.tpl',
-      1 => 1718205032,
+      1 => 1757357088,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6669ba68475ce2_16096774 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68bf242215c979_12157716 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -40,7 +40,7 @@ function content_6669ba68475ce2_16096774 (Smarty_Internal_Template $_smarty_tpl)
 <body class="sidebar-mini fixed">
 <div class="wrapper">
     <!-- Navbar-->
-    <header class="main-header hidden-print"><a class="logo" href="index.php">Vali</a>
+    <header class="main-header hidden-print"><a class="logo" href="index.php">Адмін-панель</a>
         <nav class="navbar navbar-static-top">
             <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
             <!-- Navbar Right Menu-->
@@ -60,18 +60,21 @@ function content_6669ba68475ce2_16096774 (Smarty_Internal_Template $_smarty_tpl)
                         </ul>
                     </li> -->
                     <!-- User Menu-->
+                    <?php if ((isset($_smarty_tpl->tpl_vars['userName']->value))) {?>
                     <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
                         <ul class="dropdown-menu settings-menu">
-                            <li><a href="settingUser.php"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
-                            <li><a href="exit.php"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                            <li><a href="settingUser.php"><i class="fa fa-cog fa-lg"></i> Налаштування</a></li>
+                            <li><a href="exit.php"><i class="fa fa-sign-out fa-lg"></i> Вихід</a></li>
                         </ul>
                     </li>
+                    <?php }?>
                 </ul>
             </div>
         </nav>
     </header>
     <!-- Side-Nav-->
     <aside class="main-sidebar hidden-print">
+        <?php if ((isset($_smarty_tpl->tpl_vars['userName']->value))) {?>
         <section class="sidebar">
             <div class="user-panel">
                 <div class="pull-left image"><img class="img-circle" src="imagesAvatar/<?php echo $_smarty_tpl->tpl_vars['userAvatar']->value;?>
@@ -84,7 +87,7 @@ if ($_smarty_tpl->tpl_vars['userRule']->value == 2) {?>Адміністрато�
                 </div>
             </div>
             <!-- Sidebar Menu-->
-            <?php if ((isset($_smarty_tpl->tpl_vars['userName']->value))) {?><ul class="sidebar-menu">
+            <ul class="sidebar-menu">
                 <li><a href="addBrend.php"><i class="fa fa-pie-chart"></i></i><span>Додати бренд</span></a></li>
                 <li><a href="addTovar.php"><i class="fa fa-pie-chart"></i><span>Додати товар</span></a></li>
                 <li><a href="adminOrder.php"><i class="fa fa-pie-chart"></i><span>Управління замовленнями</span></a></li>
@@ -95,9 +98,11 @@ if ($_smarty_tpl->tpl_vars['userRule']->value == 2) {?>Адміністрато�
                 <?php if ($_smarty_tpl->tpl_vars['userRule']->value == 2) {?><li><a href="indexPage.php"><i class="fa fa-pie-chart"></i><span>Управління сторінками</span></a></li><?php }?>
                 <?php if ($_smarty_tpl->tpl_vars['userRule']->value == 2) {?><li><a href="registration.php"><i class="fa fa-pie-chart"></i><span>Реєстрація users</span></a></li><?php }?>
                 <?php if (!(isset($_smarty_tpl->tpl_vars['userName']->value))) {?><li><a href="login.php"><i class="fa fa-pie-chart"></i><span>Вхід в аккаунт</span></a></li><?php }?>
-            </ul><?php }?>
+            </ul>
         </section>
+        <?php }?>
     </aside>
+
     <div class="content-wrapper">
         <div class="page-title">
             <div>

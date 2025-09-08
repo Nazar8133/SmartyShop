@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-06-12 17:54:34
+/* Smarty version 4.3.1, created on 2025-09-08 17:40:40
   from 'D:\OSPanel\domains\smartiShop\admin\templates\adminOrder.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_6669b6aa24ccb0_13336799',
+  'unifunc' => 'content_68beeae899b6f4_34939121',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9913d75561be5863b9bd330e0a8bcc0a6c805139' => 
     array (
       0 => 'D:\\OSPanel\\domains\\smartiShop\\admin\\templates\\adminOrder.tpl',
-      1 => 1718204074,
+      1 => 1757342437,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6669b6aa24ccb0_13336799 (Smarty_Internal_Template $_smarty_tpl) {
+function content_68beeae899b6f4_34939121 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table border="1">
     <?php
 $__section_i_0_loop = (is_array(@$_loop=$_smarty_tpl->tpl_vars['adminOrder']->value) ? count($_loop) : max(0, (int) $_loop));

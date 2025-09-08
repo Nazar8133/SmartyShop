@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once ("header.php");
-$page="login";
+$page="catalog";
 $smarty_login=new Smarty();
 if (!isset($_POST['knopka'])){
     $fullContent=$smarty_login->fetch("order2.tpl");
@@ -11,7 +11,7 @@ elseif (isset($_POST['knopka'], $_POST['login'], $_POST['password'], $_POST['kom
     $rezult=mysqli_query($dbc, $query) or die("Error query!");
     $row=mysqli_fetch_array($rezult);
     $id=$row['id'];
-    if (mysqli_num_rows($rezult)<0){
+    if (mysqli_num_rows($rezult)==0){
         $fullContent="Користувача з таким login неіснує! Будь-ласка пройдіть реєстрацію.<br><a href='order2.php'>Назад</a>";
     }
     else{
