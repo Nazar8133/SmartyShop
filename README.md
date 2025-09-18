@@ -24,7 +24,7 @@
 - HTML, CSS  
 
 ## ⚙️ Quick start  
-1. Clone the repository.
+1. Clone the repository to your server. 
 2. Import the database from the file smartyShop.sql into your local MySQL database.
 ⚠️ After importing, it is recommended to delete the smartyShop.sql file from the project’s public folder.
 3. Open the admin/param.php file and update the database connection details:
@@ -32,7 +32,7 @@
    	- username – your database username
    	- password – your database password
    	- dbname – database name
-4. Start a local server (e.g., OpenServer, XAMPP, Laragon).
+4. Start your server.
 
 ## 👤 User Roles
 - **User**: browse catalog, use cart, place orders
@@ -67,7 +67,7 @@
 - HTML, CSS  
 
 ## Встановлення та запуск  
-1. Клонувати репозиторій.
+1. Клонуйте репозиторій на ваш сервер. 
 2. Імпортуйте базу даних з файлу `smartyShop.sql` у вашу локальну MySQL базу.  
    ⚠️ Після імпорту рекомендується видалити файл `smartyShop.sql` з публічної папки проєкту.
 3. Відкрити файл admin/param.php та замінити дані для підключення до бази даних:
@@ -75,7 +75,7 @@
    	- username – ваш логін до бази
    	- password – ваш пароль до бази
    	- dbname – назва бази даних
-4. Запустіть локальний сервер (наприклад OpenServer, XAMPP, Laragon тощо).
+4. Запустіть ваш сервер.
 
 ## 👤 Ролі користувачів  
 - **Користувач**: перегляд каталогу, корзина, оформлення замовлення  
